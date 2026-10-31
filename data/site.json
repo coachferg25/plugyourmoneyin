@@ -1,0 +1,9 @@
+{
+  "name": "Plug Your Money In",
+  "tagline": "Which US banks, brokerages and money apps actually work with ChatGPT, Claude and Grok, and whether they can only look or can also trade.",
+  "base_url": "https://coachferg25.github.io/plugyourmoneyin",
+  "base_url_note": "GitHub Pages project site. Change when a custom domain is added, then re-run build.py.",
+  "newsletter_action": "https://example.com/TODO-newsletter-form-action",
+  "newsletter_note": "TODO: replace with the Buttondown or Beehiiv embed/form action URL. The form does nothing until then.",
+  "contact": "TODO: add contact email"
+}
