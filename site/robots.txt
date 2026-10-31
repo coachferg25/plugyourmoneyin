@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://coachferg25.github.io/plugyourmoneyin/sitemap.xml
