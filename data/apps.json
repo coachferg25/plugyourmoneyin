@@ -7,7 +7,9 @@
    "partial",
    "no",
    "unknown"
-  ]
+  ],
+  "last_full_check": "2026-11-06",
+  "last_full_check_note": "Nov 6 health check: verified Claude Personal Finance (Plaid) launch; re-checked Monarch/Copilot/YNAB/Origin/Rocket Money/Robinhood/Alpaca docs. No invented statuses."
  },
  "apps": [
   {
@@ -51,7 +53,7 @@
      "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -323,7 +325,7 @@
      "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -345,7 +347,7 @@
     },
     "claude": {
      "status": "partial",
-     "how": "Schwab's CEO described an invite-style pilot letting traders connect their own model, starting with Claude (Oct 15, 2026 earnings call, as reported). Community-built MCP servers and Truthifi also exist.",
+     "how": "Claude Personal Finance can link investment accounts via Plaid but Anthropic docs say it reads balances/limits, not holdings or trades. Fuller portfolio views still rely on third-party connectors (e.g. Truthifi) or vendor pilots.",
      "confidence": "reported"
     },
     "grok": {
@@ -376,9 +378,14 @@
      "label": "Candor: Chase/Schwab agent blocking roundup",
      "url": "https://candor.money/chase-blocking-ai-agents",
      "type": "third-party"
+    },
+    {
+     "label": "Anthropic Help: Use Personal Finance in Claude (updated Nov 2026)",
+     "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+     "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -400,8 +407,8 @@
     },
     "claude": {
      "status": "partial",
-     "how": "Third-party only (Truthifi, Synci, BankBridge).",
-     "confidence": "third-party-claim"
+     "how": "Claude Personal Finance can link investment accounts via Plaid but Anthropic docs say it reads balances/limits, not holdings or trades. Fuller portfolio views still rely on third-party connectors (e.g. Truthifi) or vendor pilots.",
+     "confidence": "documented"
     },
     "grok": {
      "status": "partial",
@@ -441,9 +448,14 @@
      "label": "Monarch Help: MCP connector (Finicity exclusion)",
      "url": "https://help.monarch.com/hc/en-us/articles/50207234679956-Monarch-MCP-Connector",
      "type": "vendor"
+    },
+    {
+     "label": "Anthropic Help: Use Personal Finance in Claude (updated Nov 2026)",
+     "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+     "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -465,8 +477,8 @@
     },
     "claude": {
      "status": "partial",
-     "how": "No official connector; Truthifi lists Vanguard (vendor-reported).",
-     "confidence": "third-party-claim"
+     "how": "Claude Personal Finance can link investment accounts via Plaid but Anthropic docs say it reads balances/limits, not holdings or trades. Fuller portfolio views still rely on third-party connectors (e.g. Truthifi) or vendor pilots.",
+     "confidence": "documented"
     },
     "grok": {
      "status": "partial",
@@ -499,9 +511,14 @@
      "label": "Plaid: Vanguard institution page (lists supported Plaid products)",
      "url": "https://plaid.com/institutions/vanguard/",
      "type": "vendor"
+    },
+    {
+     "label": "Anthropic Help: Use Personal Finance in Claude (updated Nov 2026)",
+     "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+     "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -521,9 +538,9 @@
      "confidence": "inferred"
     },
     "claude": {
-     "status": "partial",
-     "how": "No official Claude connector for this institution. Reachable only via third-party connectors such as Truthifi (vendor-reported coverage).",
-     "confidence": "third-party-claim"
+     "status": "yes",
+     "how": "Claude Personal Finance (built in, powered by Plaid, US Pro/Max/Ultra beta). Read-only. Also reachable via third-party connectors such as Truthifi.",
+     "confidence": "inferred"
     },
     "grok": {
      "status": "partial",
@@ -532,7 +549,7 @@
     }
    },
    "access": "read-only",
-   "access_note": "Read-only through ChatGPT Finances and Grok Finance. Neither can move money or pay bills.",
+   "access_note": "Read-only through ChatGPT Finances, Claude Personal Finance, and Grok Finance (where available). None of them can move money or pay bills.",
    "route": "Platform feature (Plaid)",
    "issues": [
     "JPMorgan said in Oct 2026 it blocks outside AI agents that sign in with a customer's credentials (as reported by CNBC/FT via Candor).",
@@ -564,9 +581,14 @@
      "label": "Candor: Is Chase blocking AI agents?",
      "url": "https://candor.money/chase-blocking-ai-agents",
      "type": "third-party"
+    },
+    {
+     "label": "Anthropic Help: Use Personal Finance in Claude (updated Nov 2026)",
+     "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+     "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -586,9 +608,9 @@
      "confidence": "inferred"
     },
     "claude": {
-     "status": "partial",
-     "how": "No official Claude connector for this institution. Reachable only via third-party connectors such as Truthifi (vendor-reported coverage).",
-     "confidence": "third-party-claim"
+     "status": "yes",
+     "how": "Claude Personal Finance (built in, powered by Plaid, US Pro/Max/Ultra beta). Read-only. Also reachable via third-party connectors such as Truthifi.",
+     "confidence": "inferred"
     },
     "grok": {
      "status": "partial",
@@ -597,7 +619,7 @@
     }
    },
    "access": "read-only",
-   "access_note": "Read-only through ChatGPT Finances and Grok Finance. Neither can move money or pay bills.",
+   "access_note": "Read-only through ChatGPT Finances, Claude Personal Finance, and Grok Finance (where available). None of them can move money or pay bills.",
    "route": "Platform feature (Plaid)",
    "issues": [
     "Financial Times reported (Oct 16, 2026, via Candor) that Bank of America is limiting AI agents' access to accounts.",
@@ -623,9 +645,14 @@
      "label": "Plaid: Bank of America institution page (lists supported Plaid products)",
      "url": "https://plaid.com/institutions/bank-of-america/",
      "type": "vendor"
+    },
+    {
+     "label": "Anthropic Help: Use Personal Finance in Claude (updated Nov 2026)",
+     "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+     "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -645,9 +672,9 @@
      "confidence": "inferred"
     },
     "claude": {
-     "status": "partial",
-     "how": "No official Claude connector for this institution. Reachable only via third-party connectors such as Truthifi (vendor-reported coverage).",
-     "confidence": "third-party-claim"
+     "status": "yes",
+     "how": "Claude Personal Finance (built in, powered by Plaid, US Pro/Max/Ultra beta). Read-only. Also reachable via third-party connectors such as Truthifi.",
+     "confidence": "inferred"
     },
     "grok": {
      "status": "partial",
@@ -656,7 +683,7 @@
     }
    },
    "access": "read-only",
-   "access_note": "Read-only through ChatGPT Finances and Grok Finance. Neither can move money or pay bills.",
+   "access_note": "Read-only through ChatGPT Finances, Claude Personal Finance, and Grok Finance (where available). None of them can move money or pay bills.",
    "route": "Platform feature (Plaid)",
    "issues": [
     "No Wells Fargo statement about AI agents found."
@@ -681,9 +708,14 @@
      "label": "Plaid: Wells Fargo institution page (lists supported Plaid products)",
      "url": "https://plaid.com/institutions/wells-fargo/",
      "type": "vendor"
+    },
+    {
+     "label": "Anthropic Help: Use Personal Finance in Claude (updated Nov 2026)",
+     "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+     "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -703,9 +735,9 @@
      "confidence": "inferred"
     },
     "claude": {
-     "status": "partial",
-     "how": "No official Claude connector for this institution. Reachable only via third-party connectors such as Truthifi (vendor-reported coverage).",
-     "confidence": "third-party-claim"
+     "status": "yes",
+     "how": "Claude Personal Finance (built in, powered by Plaid, US Pro/Max/Ultra beta). Read-only. Also reachable via third-party connectors such as Truthifi.",
+     "confidence": "inferred"
     },
     "grok": {
      "status": "partial",
@@ -714,7 +746,7 @@
     }
    },
    "access": "read-only",
-   "access_note": "Read-only through ChatGPT Finances and Grok Finance. Neither can move money or pay bills.",
+   "access_note": "Read-only through ChatGPT Finances, Claude Personal Finance, and Grok Finance (where available). None of them can move money or pay bills.",
    "route": "Platform feature (Plaid)",
    "issues": [
     "Plaid institution page for Capital One was not found at the expected URL, so per-bank Plaid support is unverified."
@@ -734,9 +766,14 @@
      "label": "Truthifi: connect guides (vendor-reported coverage)",
      "url": "https://truthifi.com/connect-hubs/connect-guides",
      "type": "third-party"
+    },
+    {
+     "label": "Anthropic Help: Use Personal Finance in Claude (updated Nov 2026)",
+     "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+     "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -756,9 +793,9 @@
      "confidence": "inferred"
     },
     "claude": {
-     "status": "partial",
-     "how": "No official Claude connector for this institution. Reachable only via third-party connectors such as Truthifi (vendor-reported coverage).",
-     "confidence": "third-party-claim"
+     "status": "yes",
+     "how": "Claude Personal Finance (built in, powered by Plaid, US Pro/Max/Ultra beta). Read-only. Also reachable via third-party connectors such as Truthifi.",
+     "confidence": "inferred"
     },
     "grok": {
      "status": "partial",
@@ -767,7 +804,7 @@
     }
    },
    "access": "read-only",
-   "access_note": "Read-only through ChatGPT Finances and Grok Finance. Neither can move money or pay bills.",
+   "access_note": "Read-only through ChatGPT Finances, Claude Personal Finance, and Grok Finance (where available). None of them can move money or pay bills.",
    "route": "Platform feature (Plaid)",
    "issues": [
     "Financial Times reported (Oct 16, 2026, via Candor) that Citi is restricting AI agents' access to accounts.",
@@ -793,9 +830,14 @@
      "label": "Candor: Is Chase blocking AI agents? (mentions Citi/BofA)",
      "url": "https://candor.money/chase-blocking-ai-agents",
      "type": "third-party"
+    },
+    {
+     "label": "Anthropic Help: Use Personal Finance in Claude (updated Nov 2026)",
+     "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+     "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -815,9 +857,9 @@
      "confidence": "inferred"
     },
     "claude": {
-     "status": "partial",
-     "how": "No official Claude connector for this institution. Reachable only via third-party connectors such as Truthifi (vendor-reported coverage).",
-     "confidence": "third-party-claim"
+     "status": "yes",
+     "how": "Claude Personal Finance (built in, powered by Plaid, US Pro/Max/Ultra beta). Read-only. Also reachable via third-party connectors such as Truthifi.",
+     "confidence": "inferred"
     },
     "grok": {
      "status": "partial",
@@ -826,7 +868,7 @@
     }
    },
    "access": "read-only",
-   "access_note": "Read-only through ChatGPT Finances and Grok Finance. Neither can move money or pay bills.",
+   "access_note": "Read-only through ChatGPT Finances, Claude Personal Finance, and Grok Finance (where available). None of them can move money or pay bills.",
    "route": "Platform feature (Plaid)",
    "issues": [
     "Ally Invest (brokerage) is a separate product and was not checked."
@@ -851,9 +893,14 @@
      "label": "Plaid: Ally Bank institution page (lists supported Plaid products)",
      "url": "https://plaid.com/institutions/ally-bank/",
      "type": "vendor"
+    },
+    {
+     "label": "Anthropic Help: Use Personal Finance in Claude (updated Nov 2026)",
+     "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+     "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -873,9 +920,9 @@
      "confidence": "inferred"
     },
     "claude": {
-     "status": "partial",
-     "how": "No official Claude connector for this institution. Reachable only via third-party connectors such as Truthifi (vendor-reported coverage).",
-     "confidence": "third-party-claim"
+     "status": "yes",
+     "how": "Claude Personal Finance (built in, powered by Plaid, US Pro/Max/Ultra beta). Read-only. Also reachable via third-party connectors such as Truthifi.",
+     "confidence": "inferred"
     },
     "grok": {
      "status": "partial",
@@ -884,7 +931,7 @@
     }
    },
    "access": "read-only",
-   "access_note": "Read-only through ChatGPT Finances and Grok Finance. Neither can move money or pay bills.",
+   "access_note": "Read-only through ChatGPT Finances, Claude Personal Finance, and Grok Finance (where available). None of them can move money or pay bills.",
    "route": "Platform feature (Plaid)",
    "issues": [
     "Per-card coverage (for example business cards) not checked."
@@ -909,9 +956,14 @@
      "label": "Plaid: American Express institution page (lists supported Plaid products)",
      "url": "https://plaid.com/institutions/american-express/",
      "type": "vendor"
+    },
+    {
+     "label": "Anthropic Help: Use Personal Finance in Claude (updated Nov 2026)",
+     "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+     "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -931,9 +983,9 @@
      "confidence": "inferred"
     },
     "claude": {
-     "status": "partial",
-     "how": "No official Claude connector for this institution. Reachable only via third-party connectors such as Truthifi (vendor-reported coverage).",
-     "confidence": "third-party-claim"
+     "status": "yes",
+     "how": "Claude Personal Finance (built in, powered by Plaid, US Pro/Max/Ultra beta). Read-only. Also reachable via third-party connectors such as Truthifi.",
+     "confidence": "inferred"
     },
     "grok": {
      "status": "partial",
@@ -942,7 +994,7 @@
     }
    },
    "access": "read-only",
-   "access_note": "Read-only through ChatGPT Finances and Grok Finance. Neither can move money or pay bills.",
+   "access_note": "Read-only through ChatGPT Finances, Claude Personal Finance, and Grok Finance (where available). None of them can move money or pay bills.",
    "route": "Platform feature (Plaid)",
    "issues": [
     "Plaid institution page for SoFi was not found at the expected URL; per-bank Plaid support is unverified."
@@ -962,9 +1014,14 @@
      "label": "Truthifi: connect guides (vendor-reported coverage)",
      "url": "https://truthifi.com/connect-hubs/connect-guides",
      "type": "third-party"
+    },
+    {
+     "label": "Anthropic Help: Use Personal Finance in Claude (updated Nov 2026)",
+     "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+     "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -1008,7 +1065,7 @@
      "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -1056,7 +1113,7 @@
      "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -1100,7 +1157,7 @@
      "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -1143,7 +1200,7 @@
      "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -1191,7 +1248,7 @@
      "type": "vendor-staff"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -1204,7 +1261,7 @@
    "name": "Plaid",
    "category": "Data aggregator",
    "route": "Powers ChatGPT & Grok finance features",
-   "summary": "Plaid is the pipe behind ChatGPT Finances and Grok's Finance integration. Its own Claude-compatible MCP is for developers, not for linking your accounts.",
+   "summary": "Plaid is the pipe behind ChatGPT Finances, Claude Personal Finance, and Grok's Finance integration. Its own Dashboard MCP is for developers, not for linking your accounts.",
    "platforms": {
     "chatgpt": {
      "status": "yes",
@@ -1212,8 +1269,8 @@
      "confidence": "documented"
     },
     "claude": {
-     "status": "no",
-     "how": "Plaid's remote Dashboard MCP exposes developer diagnostics (Link analytics, usage), not consumer bank data. No Claude consumer bank-linking feature has launched.",
+     "status": "yes",
+     "how": "Claude Personal Finance (beta, US Pro/Max/Ultra) links banks and cards through Plaid. Read-only.",
      "confidence": "documented"
     },
     "grok": {
@@ -1223,7 +1280,7 @@
     }
    },
    "access": "read-only",
-   "access_note": "Consumer links through ChatGPT/Grok are read-only. The Dashboard MCP is for developers' own Plaid teams.",
+   "access_note": "Consumer links through ChatGPT, Claude, and Grok are read-only. The Dashboard MCP is for developers' own Plaid teams.",
    "issues": [
     "Dashboard MCP is 'under active development' with limited support, per Plaid.",
     "Banks control what they share; Chase and others have said they restrict credential-based agents but still support Plaid."
@@ -1248,9 +1305,19 @@
      "label": "BleepingComputer: Anthropic testing 'Claude Money' (Sep 16, 2026)",
      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-wants-claude-to-analyze-your-bank-account-and-financial-data/",
      "type": "third-party"
+    },
+    {
+     "label": "Anthropic Help: Use Personal Finance in Claude (updated Nov 2026)",
+     "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+     "type": "vendor"
+    },
+    {
+     "label": "Anthropic: Introducing Personal Finance in Claude (Nov 2026)",
+     "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+     "type": "vendor"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
@@ -1391,7 +1458,7 @@
      "type": "third-party"
     }
    ],
-   "checked": "2026-10-31",
+   "checked": "2026-11-06",
    "affiliate": {
     "slot": true,
     "label": null,
