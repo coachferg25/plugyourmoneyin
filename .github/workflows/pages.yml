@@ -19,6 +19,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      artifact_id: ${{ steps.pages-artifact.outputs.artifact_id }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -32,6 +34,7 @@ jobs:
         run: python3 build.py
 
       - name: Upload Pages artifact
+        id: pages-artifact
         uses: actions/upload-pages-artifact@v5
         with:
           path: site
@@ -39,10 +42,19 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      # actions/deploy-pages@v5 ignores timeout values above 600000 ms and
+      # cancels the deployment when that cap is hit. Poll Pages directly so a
+      # slow updating_pages publish is not aborted at 10 minutes.
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        env:
+          ARTIFACT_ID: ${{ needs.build.outputs.artifact_id }}
+        run: python3 .github/scripts/deploy_pages.py
