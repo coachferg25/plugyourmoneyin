@@ -57,4 +57,5 @@ jobs:
         id: deployment
         env:
           ARTIFACT_ID: ${{ needs.build.outputs.artifact_id }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 .github/scripts/deploy_pages.py

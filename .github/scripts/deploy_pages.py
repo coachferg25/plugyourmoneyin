@@ -152,6 +152,20 @@ def poll_deployment(deployment_id, deadline):
 
 
 def deploy():
+    missing = [
+        name
+        for name in (
+            "ARTIFACT_ID",
+            "GITHUB_TOKEN",
+            "GITHUB_REPOSITORY",
+            "GITHUB_SHA",
+            "ACTIONS_ID_TOKEN_REQUEST_URL",
+            "ACTIONS_ID_TOKEN_REQUEST_TOKEN",
+        )
+        if not os.environ.get(name)
+    ]
+    if missing:
+        raise SystemExit("Missing environment: " + ", ".join(missing))
     sha = os.environ["GITHUB_SHA"]
     deadline = time.time() + WAIT_SECONDS
     for attempt in range(1, MAX_ATTEMPTS + 1):
