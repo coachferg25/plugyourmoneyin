@@ -42,6 +42,7 @@ def layout(title, desc, path, body, extra_head="", jsonld=""):
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{e(url)}">
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="index,follow">
+<meta name='impact-site-verification' value='1426315d-d716-4d4d-82b7-ce18e6746488'>
 <link rel="stylesheet" href="{rel}assets/style.css">
 {extra_head}{jsonld}
 </head><body>
